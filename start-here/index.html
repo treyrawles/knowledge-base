@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Here | Healthcare Markets & Technology</title>
+  <meta name="description" content="New to Healthcare Markets & Technology? Start here — curated reading paths through 521 expert analyses of healthcare AI, prior auth, Medicare Advantage, and health tech investing.">
+  <link rel="canonical" href="https://kb.onhealthcare.tech/start-here/">
+  <style>
+
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #22263a;
+  --border: #2a2f45;
+  --text: #e8eaf0;
+  --muted: #8b90a8;
+  --accent: #4f8ef7;
+  --accent-dim: #1e3a6e;
+  --green: #22c55e;
+  --tag-bg: #1e2235;
+  --tag-text: #7b9fd4;
+  --shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(15,17,23,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.site-logo {
+  font-size: 15px; font-weight: 700; color: var(--text);
+  text-decoration: none; white-space: nowrap;
+}
+.site-logo span { color: var(--accent); }
+.header-nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.header-nav a {
+  color: var(--muted); text-decoration: none; font-size: 13px;
+  padding: 5px 10px; border-radius: 6px; transition: all .15s;
+}
+.header-nav a:hover { color: var(--text); background: var(--surface2); }
+.header-nav a.active { color: var(--text); background: var(--surface2); }
+.page-container { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+h2 { font-size: 1.3rem; font-weight: 700; margin: 32px 0 12px; color: var(--text); }
+p { color: var(--muted); margin-bottom: 16px; }
+a { color: var(--accent); }
+.badge {
+  display: inline-block; background: var(--accent-dim); color: var(--accent);
+  font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px;
+  text-transform: uppercase; letter-spacing: .05em; margin-bottom: 16px;
+}
+.subtitle { font-size: 1.1rem; color: var(--muted); margin-bottom: 32px; max-width: 640px; }
+footer {
+  margin-top: 80px; padding: 32px 20px; border-top: 1px solid var(--border);
+  text-align: center; color: var(--muted); font-size: 13px;
+}
+footer a { color: var(--accent); text-decoration: none; }
+@media (max-width: 600px) {
+  .site-header { flex-wrap: wrap; }
+  h1 { font-size: 1.5rem; }
+}
+
+.hero { padding: 60px 0 40px; }
+.hero .badge { margin-bottom: 12px; }
+.path-grid { display: grid; gap: 24px; margin-top: 8px; }
+.path-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 24px; transition: border-color .2s;
+}
+.path-card:hover { border-color: var(--accent); }
+.path-header { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+.path-icon { font-size: 2rem; flex-shrink: 0; }
+.path-header h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+.path-header p { font-size: 13px; color: var(--muted); margin: 0; }
+.path-articles { list-style: none; padding: 0; margin: 0 0 12px; }
+.path-articles li { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.path-articles li:last-child { border-bottom: none; }
+.path-articles a { color: var(--text); text-decoration: none; font-size: 14px; }
+.path-articles a:hover { color: var(--accent); }
+.path-more { font-size: 13px; color: var(--accent); text-decoration: none; font-weight: 600; }
+.path-more:hover { text-decoration: underline; }
+.stats-row {
+  display: flex; gap: 24px; flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 24px; margin-bottom: 40px;
+}
+.stat { text-align: center; flex: 1; min-width: 100px; }
+.stat .num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+.stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.cta-box {
+  background: var(--accent-dim); border: 1px solid var(--accent);
+  border-radius: 12px; padding: 32px; text-align: center; margin: 48px 0;
+}
+.cta-box h2 { color: var(--text); margin-bottom: 8px; }
+.cta-box p { color: var(--muted); margin-bottom: 20px; }
+.cta-btn {
+  display: inline-block; background: var(--accent); color: #fff;
+  padding: 12px 28px; border-radius: 8px; font-weight: 700;
+  text-decoration: none; font-size: 15px;
+}
+.cta-btn:hover { opacity: .9; }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="site-logo">Healthcare <span>Markets &amp; Technology</span></a>
+  <nav class="header-nav">
+    <a href="/">Home</a>
+    <a href="/knowledge/">Knowledge Base</a>
+    <a href="/topics/">Topics</a>
+    <a href="/archive/">Archive</a>
+    <a href="/start-here/" class="active">Start Here</a>
+    <a href="https://www.onhealthcare.tech/subscribe" style="background:var(--accent);color:#fff;padding:5px 12px;border-radius:6px;font-weight:600;">Subscribe</a>
+  </nav>
+</header>
+<div class="page-container">
+  <div class="hero">
+    <div class="badge">New Reader Guide</div>
+    <h1>Start Here</h1>
+    <p class="subtitle">Healthcare Markets &amp; Technology covers the business, policy, and technology forces reshaping the $4.5 trillion U.S. healthcare system. Here's how to navigate 521 in-depth analyses.</p>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat"><div class="num">521</div><div class="label">In-Depth Analyses</div></div>
+    <div class="stat"><div class="num">3,875</div><div class="label">Topics Covered</div></div>
+    <div class="stat"><div class="num">6</div><div class="label">Content Clusters</div></div>
+    <div class="stat"><div class="num">2</div><div class="label">Years of Coverage</div></div>
+  </div>
+
+  <h2>Curated Reading Paths</h2>
+  <p>Each path below is a curated set of 5 foundational articles for a major topic area. Start with the path most relevant to your work.</p>
+
+  <div class="path-grid">
+    
+<div class="path-card">
+  <div class="path-header">
+    <span class="path-icon">🤖</span>
+    <div>
+      <h3>Healthcare AI & Technology</h3>
+      <p>The infrastructure, vendors, and business models powering AI adoption in clinical and administrative settings.</p>
+    </div>
+  </div>
+  <ul class="path-articles">
+    <li><a href="https://www.onhealthcare.tech/p/the-ai-in-healthcare-market-map-2025" target="_blank" rel="noopener">The AI in Healthcare Market Map 2025</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-health-system-ai-vendor-landscape" target="_blank" rel="noopener">The Health System AI Vendor Landscape</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-payer-tech-stack-in-2025-what" target="_blank" rel="noopener">The Payer Tech Stack in 2025</a></li>
+<li><a href="https://www.onhealthcare.tech/p/healthcare-ai-policy-acceleration" target="_blank" rel="noopener">Healthcare AI Policy Acceleration</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-ai-clinical-infrastructure-company" target="_blank" rel="noopener">The AI Clinical Infrastructure Company</a></li>
+
+  </ul>
+  <a href="/topics/" class="path-more">Browse all Healthcare AI & Technology articles →</a>
+</div>
+
+<div class="path-card">
+  <div class="path-header">
+    <span class="path-icon">📋</span>
+    <div>
+      <h3>Prior Authorization & Revenue Cycle</h3>
+      <p>How prior auth reform, automation, and the CMS-0057-F rule are reshaping the $4.5T revenue cycle.</p>
+    </div>
+  </div>
+  <ul class="path-articles">
+    <li><a href="https://www.onhealthcare.tech/p/the-prior-auth-api-economy-how-cms" target="_blank" rel="noopener">The Prior Auth API Economy</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-prior-auth-gold-standard-what" target="_blank" rel="noopener">The Prior Auth Gold Standard</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-prior-auth-infrastructure-gap" target="_blank" rel="noopener">The Prior Auth Infrastructure Gap</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-prior-auth-reform-scorecard" target="_blank" rel="noopener">The Prior Auth Reform Scorecard</a></li>
+<li><a href="https://www.onhealthcare.tech/p/healthcare-claim-adjudication-complete" target="_blank" rel="noopener">Healthcare Claim Adjudication Complete</a></li>
+
+  </ul>
+  <a href="/topics/" class="path-more">Browse all Prior Authorization & Revenue Cycle articles →</a>
+</div>
+
+<div class="path-card">
+  <div class="path-header">
+    <span class="path-icon">🏥</span>
+    <div>
+      <h3>Medicare Advantage & Value-Based Care</h3>
+      <p>The economics, star ratings, risk adjustment, and technology stack behind MA plans and ACOs.</p>
+    </div>
+  </div>
+  <ul class="path-articles">
+    <li><a href="https://www.onhealthcare.tech/p/the-medicare-advantage-2026-rate" target="_blank" rel="noopener">The Medicare Advantage 2026 Rate</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-medicare-advantage-star-ratings" target="_blank" rel="noopener">The Medicare Advantage Star Ratings</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-value-based-care-infrastructure" target="_blank" rel="noopener">The Value-Based Care Infrastructure</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-hedis-insurgency-building-an" target="_blank" rel="noopener">The HEDIS Insurgency</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-cms-radv-revolution-how-aggressive" target="_blank" rel="noopener">The CMS RADV Revolution</a></li>
+
+  </ul>
+  <a href="/topics/" class="path-more">Browse all Medicare Advantage & Value-Based Care articles →</a>
+</div>
+
+<div class="path-card">
+  <div class="path-header">
+    <span class="path-icon">💰</span>
+    <div>
+      <h3>Health Tech Investing & Venture Capital</h3>
+      <p>How smart money moves in health tech: fund strategies, market maps, exit dynamics, and portfolio construction.</p>
+    </div>
+  </div>
+  <ul class="path-articles">
+    <li><a href="https://www.onhealthcare.tech/p/what-tier-1-healthcare-vcs-are-really" target="_blank" rel="noopener">What Tier 1 Healthcare VCs Are Really Doing</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-digital-health-funding-winter" target="_blank" rel="noopener">The Digital Health Funding Winter</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-2025-playbook-for-early-stage" target="_blank" rel="noopener">The 2025 Playbook for Early-Stage Health Tech</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-healthcare-ai-revolution-analyzing" target="_blank" rel="noopener">The Healthcare AI Revolution Analyzing</a></li>
+<li><a href="https://www.onhealthcare.tech/p/raising-capital-in-health-tech-when" target="_blank" rel="noopener">Raising Capital in Health Tech</a></li>
+
+  </ul>
+  <a href="/topics/" class="path-more">Browse all Health Tech Investing & Venture Capital articles →</a>
+</div>
+
+<div class="path-card">
+  <div class="path-header">
+    <span class="path-icon">⚖️</span>
+    <div>
+      <h3>Healthcare Policy & Regulation</h3>
+      <p>CMS rules, drug pricing reform, Medicaid policy, and the regulatory forces shaping market structure.</p>
+    </div>
+  </div>
+  <ul class="path-articles">
+    <li><a href="https://www.onhealthcare.tech/p/the-drug-pricing-reform-playbook" target="_blank" rel="noopener">The Drug Pricing Reform Playbook</a></li>
+<li><a href="https://www.onhealthcare.tech/p/100-core-us-healthcare-system-concepts" target="_blank" rel="noopener">100 Core US Healthcare System Concepts</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-evolution-of-healthcare-regulation" target="_blank" rel="noopener">The Evolution of Healthcare Regulation</a></li>
+<li><a href="https://www.onhealthcare.tech/p/cms-digital-transformation-and-the" target="_blank" rel="noopener">CMS Digital Transformation</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-health-technology-ecosystem-rfi" target="_blank" rel="noopener">The Health Technology Ecosystem RFI</a></li>
+
+  </ul>
+  <a href="/topics/" class="path-more">Browse all Healthcare Policy & Regulation articles →</a>
+</div>
+
+<div class="path-card">
+  <div class="path-header">
+    <span class="path-icon">🔗</span>
+    <div>
+      <h3>Interoperability & Health Data</h3>
+      <p>FHIR, APIs, EHR integration, and the infrastructure enabling data exchange across the healthcare system.</p>
+    </div>
+  </div>
+  <ul class="path-articles">
+    <li><a href="https://www.onhealthcare.tech/p/the-cms-national-provider-directory" target="_blank" rel="noopener">The CMS National Provider Directory</a></li>
+<li><a href="https://www.onhealthcare.tech/p/fhir-r5-to-r6-migration-technical" target="_blank" rel="noopener">FHIR R5 to R6 Migration Technical</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-rise-of-healthcare-ai-agents" target="_blank" rel="noopener">The Rise of Healthcare AI Agents</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-interoperability-trap-how-tefcas" target="_blank" rel="noopener">Healthcare Interoperability</a></li>
+<li><a href="https://www.onhealthcare.tech/p/the-api-is-the-scalpel-a-business" target="_blank" rel="noopener">The API is the Scalpel</a></li>
+
+  </ul>
+  <a href="/topics/" class="path-more">Browse all Interoperability & Health Data articles →</a>
+</div>
+
+  </div>
+
+  <div class="cta-box">
+    <h2>Get New Analysis Every Week</h2>
+    <p>Join 10,000+ healthcare executives, investors, and founders who read Healthcare Markets &amp; Technology.</p>
+    <a href="https://www.onhealthcare.tech/subscribe" class="cta-btn">Subscribe Free →</a>
+  </div>
+
+  <h2>Explore by Topic</h2>
+  <p>Browse all 3,875 topics in the <a href="/knowledge/">Knowledge Base</a> or explore the <a href="/topics/">Topic Index</a> for a structured overview of every major subject area.</p>
+
+</div>
+<footer>
+  <p>© 2026 Healthcare Markets &amp; Technology · <a href="https://www.onhealthcare.tech">onhealthcare.tech</a> · <a href="https://www.onhealthcare.tech/subscribe">Subscribe</a></p>
+</footer>
+</body>
+</html>
